@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<set xmlns:android="http://schemas.android.com/apk/res/android"
+    android:ordering="sequentially">
+<objectAnimator
+    android:repeatCount="3"
+    android:repeatMode="reverse"
+    android:interpolator="@android:anim/accelerate_decelerate_interpolator"
+    android:duration="1000">
+
+    <propertyValuesHolder
+        android:propertyName="translationY"
+        android:valueTo="300"/>
+
+    <propertyValuesHolder
+        android:propertyName="backgroundColor"
+        android:valueFrom="#FF6D00"
+        android:valueTo="#C51162"
+        android:valueType="colorType"/>
+
+    <propertyValuesHolder
+        android:propertyName="textColor"
+        android:valueFrom="#6AFF00"
+        android:valueTo="@color/teal_200"
+        android:valueType="colorType"/>
+
+</objectAnimator>
+
+    <objectAnimator
+         android:repeatCount="3"
+        android:repeatMode="reverse"
+        android:interpolator="@android:anim/accelerate_decelerate_interpolator"
+        android:duration="1000">
+        <propertyValuesHolder
+            android:valueFrom="0"
+            android:valueTo="360"
+            android:propertyName="rotationY"
+            />
+        <propertyValuesHolder
+            android:propertyName="backgroundColor"
+            android:valueFrom="#8847EC8C"
+            android:valueTo="#304FFE"
+            android:valueType="colorType"/>
+
+        <propertyValuesHolder
+            android:propertyName="textColor"
+            android:valueFrom="#BB00C8"
+            android:valueTo="#FF0000"
+            android:valueType="colorType"/>
+    </objectAnimator>
+
+</set>

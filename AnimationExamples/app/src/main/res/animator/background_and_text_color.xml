@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<objectAnimator xmlns:android="http://schemas.android.com/apk/res/android"
+    android:repeatCount="3"
+    android:repeatMode="reverse"
+    android:interpolator="@android:anim/accelerate_decelerate_interpolator"
+    android:duration="1000"
+    >
+    <propertyValuesHolder
+        android:valueFrom="@color/my_light_blue"
+        android:valueTo="@color/my_yellow"
+        android:valueType="colorType"
+        android:propertyName="backgroundColor"/>
+    <propertyValuesHolder
+        android:valueFrom="@color/my_purple"
+        android:valueTo="@color/my_red"
+        android:valueType="colorType"
+        android:propertyName="textColor"/>
+
+</objectAnimator>

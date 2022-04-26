@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/propertyAnimationsFragment">
+
+    <fragment
+        android:id="@+id/propertyAnimationsFragment"
+        android:name="com.humeyramercan.animationexamples.PropertyAnimationsFragment"
+        android:label="PropertyAnimationsFragment"
+        tools:layout="@layout/fragment_property_animations">
+        <action
+            android:id="@+id/action_propertyAnimationsFragment_to_viewAnimationsFragment"
+            app:destination="@id/TweenAnimationsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/TweenAnimationsFragment"
+        android:name="com.humeyramercan.animationexamples.TweenAnimationsFragment"
+        android:label="fragment_view_animations"
+        tools:layout="@layout/fragment_view_animations" >
+        <action
+            android:id="@+id/action_viewAnimationsFragment_to_frameAnimationFragment"
+            app:destination="@id/frameAnimationFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/frameAnimationFragment"
+        android:name="com.humeyramercan.animationexamples.FrameAnimationFragment"
+        android:label="FrameAnimationFragment"
+        tools:layout="@layout/fragment_frame_animation"
+        />
+</navigation>

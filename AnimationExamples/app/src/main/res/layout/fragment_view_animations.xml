@@ -1,0 +1,309 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/contraintLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".TweenAnimationsFragment">
+
+
+        <Button
+            android:id="@+id/goToFrameAnimationsBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:backgroundTint="#B8FF91"
+            android:paddingVertical="12dp"
+            android:text="Go to frame animations"
+            android:textAllCaps="false"
+            android:textColor="@color/black"
+            android:textSize="22sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.48"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/alphaText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="84dp"
+            android:layout_marginEnd="17dp"
+            android:fontFamily="@font/baloo_bhai"
+            android:text="Alpha "
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toStartOf="@+id/rotateText"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/translateFromLeftBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:layout_marginEnd="11dp"
+            android:backgroundTint="@color/my_light_blue"
+            android:text="Animation 7"
+            android:textAllCaps="false"
+            android:textSize="17sp"
+            app:layout_constraintEnd_toStartOf="@+id/translateFromRightBtn"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/translateFromLeftTxt" />
+
+        <TextView
+            android:id="@+id/translateFromLeftTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="23dp"
+            android:layout_marginEnd="10dp"
+            android:fontFamily="@font/baloo_bhai"
+            android:text="Translate from left"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toStartOf="@+id/translateFromRightTxt"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/translateFromDownBtn" />
+
+        <Button
+            android:id="@+id/translateFromDownBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="6dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="24dp"
+            android:backgroundTint="#64DD17"
+            android:text="Animation 5"
+            android:textAllCaps="false"
+            android:textSize="17sp"
+            app:layout_constraintEnd_toStartOf="@+id/translateFromUpBtn"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/translateFromDownTxt" />
+
+        <TextView
+            android:id="@+id/translateFromDownTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="24dp"
+            android:fontFamily="@font/baloo_bhai"
+            android:text="Translate from down"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toStartOf="@+id/translateFromUpTxt"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/scaleZoomInButton" />
+
+        <Button
+            android:id="@+id/scaleZoomOutButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:backgroundTint="#FFD600"
+            android:text="Animation 4"
+            android:textAllCaps="false"
+            android:textSize="17sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/scaleZoomInButton"
+            app:layout_constraintTop_toBottomOf="@+id/scaleZoomOutText" />
+
+        <TextView
+            android:id="@+id/scaleZoomOutText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:fontFamily="@font/baloo_bhai"
+            android:text="Scale zoom out"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/scaleZoomInText"
+            app:layout_constraintTop_toBottomOf="@+id/rotateButton" />
+
+        <Button
+            android:id="@+id/scaleZoomInButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="6dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="24dp"
+            android:backgroundTint="@color/my_purple"
+            android:text="Animation 3"
+            android:textAllCaps="false"
+            android:textSize="17sp"
+            app:layout_constraintEnd_toStartOf="@+id/scaleZoomOutButton"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/scaleZoomInText" />
+
+        <TextView
+            android:id="@+id/scaleZoomInText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="24dp"
+            android:fontFamily="@font/baloo_bhai"
+            android:text="Scale zoom in"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toStartOf="@+id/scaleZoomOutText"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/alphaButton" />
+
+        <TextView
+            android:id="@+id/rotateText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/baloo_bhai"
+            android:text="Rotate "
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="@+id/alphaText"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/alphaText"
+            app:layout_constraintTop_toTopOf="@+id/alphaText" />
+
+        <Button
+            android:id="@+id/rotateButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="1dp"
+            android:backgroundTint="@color/my_red"
+            android:text="Animation 2"
+            android:textAllCaps="false"
+            android:textSize="17sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/alphaButton"
+            app:layout_constraintTop_toBottomOf="@+id/rotateText" />
+
+        <Button
+            android:id="@+id/translateFromUpBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:backgroundTint="#C51162"
+            android:text="Animation 6"
+            android:textAllCaps="false"
+            android:textSize="17sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/translateFromDownBtn"
+            app:layout_constraintTop_toBottomOf="@+id/translateFromUpTxt" />
+
+        <TextView
+            android:id="@+id/translateFromUpTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/baloo_bhai"
+            android:text="Translate from up"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/translateFromDownTxt"
+            app:layout_constraintTop_toBottomOf="@+id/scaleZoomOutButton" />
+
+        <Button
+            android:id="@+id/translateFromRightBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:layout_marginEnd="1dp"
+            android:backgroundTint="@color/purple_700"
+            android:text="Animation 8"
+            android:textAllCaps="false"
+            android:textSize="17sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/translateFromLeftBtn"
+            app:layout_constraintTop_toBottomOf="@+id/translateFromRightTxt" />
+
+        <TextView
+            android:id="@+id/translateFromRightTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="23dp"
+            android:fontFamily="@font/baloo_bhai"
+            android:text="Translate from right"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/translateFromLeftTxt"
+            app:layout_constraintTop_toBottomOf="@+id/translateFromUpBtn" />
+
+        <Button
+            android:id="@+id/alphaButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="11dp"
+            android:backgroundTint="@color/black"
+            android:text="Animation 1"
+            android:textAllCaps="false"
+            android:textSize="17sp"
+            app:layout_constraintEnd_toStartOf="@+id/rotateButton"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/alphaText" />
+
+        <Button
+            android:id="@+id/mixedAnimButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="88dp"
+            android:backgroundTint="#00BFA5"
+            android:text="Animation 9"
+            android:textAllCaps="false"
+            android:textSize="17sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/mixedAnimText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="1dp"
+            android:fontFamily="@font/baloo_bhai"
+            android:text="Mixed"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toTopOf="@+id/mixedAnimButton"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.491"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/viewAnimationsText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:fontFamily="@font/baloo_bhai"
+            android:gravity="center"
+            android:text="View Animations"
+            android:textColor="@color/my_red"
+            android:textSize="28sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tweenAnimationsText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/baloo_bhai"
+            android:gravity="center"
+            android:text="Tween Animations"
+            android:textColor="#0091EA"
+            android:textSize="23sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.504"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/viewAnimationsText" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
